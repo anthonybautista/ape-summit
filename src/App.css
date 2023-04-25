@@ -11,8 +11,8 @@ body {
 }
 
 .otherFont {
-    font-family: "Arial";
-    font-weight: bold;
+    font-family: "Marker Felt Wide";
+    font-size: small;
 }
 
 .icons {
@@ -34,6 +34,13 @@ body {
 @font-face {
     font-family: 'Omiwa';
     src: local('Omiwa'), url(./fonts/Omiwa.otf) format('opentype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'Marker Felt Wide';
+    src: local('Marker Felt Wide'), url(./fonts/MarkerFeltWide.ttf) format('truetype');
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
 }

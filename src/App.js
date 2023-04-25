@@ -16,7 +16,7 @@ import { Follow } from 'react-twitter-widgets';
 
 const theme = createTheme({
     typography: {
-        fontFamily: 'Omiwa, Arial',
+        fontFamily: 'Omiwa, Arial'
     },
     palette: {
         primary: {
@@ -70,7 +70,7 @@ function App() {
   }
 
   const gotoURL = (url) => {
-    window.location.href = url;
+    window.open(url);
   }
 
   return (
@@ -118,7 +118,7 @@ function App() {
               <Grid container spacing={1} alignItems="center">
                   <Grid item xs={12}>
                       <Typography variant="h3" sx={{overflowWrap: 'break-word'}}>
-                          The OG PFP of Avalanche
+                          THE OG PFP OF AVALANCHE
                       </Typography>
                   </Grid>
               </Grid>
@@ -133,7 +133,7 @@ function App() {
                             onClick={() => gotoURL('https://campfire.exchange/collections/0x6d5087b3082f73d42a32d85e38bc95dccede39bb')}
                         >
                             <img id="campfire" src="./images/campfire-log-black.png" height="30px" className="buttonIcon" alt="Campfire Logo"/>
-                            Campfire
+                            CAMPFIRE
                         </Fab>
                     </Grid>
                     <Grid item xs={4} display="flex" justifyContent="center">
@@ -144,7 +144,7 @@ function App() {
                             color="warning"
                         >
                             <img id="legacy" src="./images/small-ape-transparent.png" height="30px" className="buttonIcon" alt="Avax Ape Head"/>
-                            Legacy
+                            LEGACY
                         </Fab>
                     </Grid>
                     <Grid item xs={4} display="flex" justifyContent="center">
@@ -155,7 +155,7 @@ function App() {
                             color="warning"
                         >
                             <FontAwesomeIcon icon={faDiscord} color="black" fontSize="28px" className="buttonIcon"/>
-                            Discord
+                            DISCORD
                         </Fab>
                     </Grid>
                     <Grid item xs={12}>
@@ -163,8 +163,8 @@ function App() {
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h5" sx={{overflowWrap: 'break-word'}}>
-                            The Avax Apes have worked with prominent artists in the Avalanche ecosystem to bring you
-                            limited edition NFTs for Avalanche Summit II
+                            THE AVAX APES HAVE WORKED WITH PROMINENT ARTISTS IN THE AVALANCHE ECOSYSTEM TO BRING YOU
+                            LIMITED EDITION NFTS FOR AVALANCHE SUMMIT II
                         </Typography>
                     </Grid>
                 </Grid>
@@ -173,7 +173,7 @@ function App() {
                 <Grid container spacing={2} alignItems="center">
                     <Grid item xs={12} sx={{textAlign: 'center'}}>
                         <Typography variant="h4" sx={{overflowWrap: 'break-word'}}>
-                            Current Edition
+                            CURRENT EDITION
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
@@ -186,7 +186,7 @@ function App() {
                             /*onClick={() => gotoURL('#faq')}*/
                             color="warning"
                         >
-                            Mint
+                            MINT
                         </Fab>
                     </Grid>
                 </Grid>
@@ -207,39 +207,12 @@ function App() {
                         id="panel1a-header"
                         sx={{backgroundColor: '#FFAD06'}}
                     >
-                        <Typography>When did the Avax Apes mint?</Typography>
+                        <Typography>WHEN DID THE AVAX APES MINT<span className="otherFont">?</span></Typography>
                     </AccordionSummary>
                     <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
-                        <p className="otherFont">
-                            The Avax Apes minted on September 1, 2021.
-                        </p>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel2a-content"
-                        id="panel2a-header"
-                        sx={{backgroundColor: '#FFAD06'}}
-                    >
-                        <Typography>What happened to the devs?</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
-                        <p className="otherFont">
-                            After the original roadmap was delivered, the devs developed the nasty habit of
-                            disappearing for months at time. This has caused some to consider the Avax Apes a rugged
-                            project, but we politely disagree.
-                        </p>
-                        <p className="otherFont">
-                            The Avax Apes have been a community-run project since nearly the very beginning, and despite
-                            the original devs being AWOL The Apes have remained a strong presence within the
-                            Avalanche ecosystem. A true social club where you can find a representative from nearly
-                            every well-known project on Avalanche.
-                        </p>
-                        <p className="otherFont">
-                            The community has control over all socials and the NFT contract, but does not
-                            control the legacy website or internal marketplace.
-                        </p>
+                        <Typography>
+                            THE AVAX APES MINTED ON SEPTEMBER <span className="otherFont">1 , 2021.</span>
+                        </Typography>
                     </AccordionDetails>
                 </Accordion>
                 <Accordion>
@@ -249,19 +222,98 @@ function App() {
                         id="panel3a-header"
                         sx={{backgroundColor: '#FFAD06'}}
                     >
-                        <Typography>What is Alpha Chat?</Typography>
+                        <Typography>WHAT IS ALPHA CHAT<span className="otherFont">?</span></Typography>
                     </AccordionSummary>
                     <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
-                        <p className="otherFont">
-                            The Avax Apes Alpha Chat is a token-gated &nbsp;
-                            <Link href="https://discord.gg/YPuaQwwRmh" target="_blank" rel="_norefferer">Discord</Link>&nbsp;
-                            channel where you can get information on all things Avalanche (as well as other chains).
-                        </p>
-                        <p className="otherFont">
-                            A place where you can rub elbows with Avalanche veterans who have been here since the
-                            beginning. If you are looking for a place where you can pick the brains of people who have
-                            seen and done it all in web3, The Avax Apes Alpha Chat is where you should be.
-                        </p>
+                        <Typography sx={{mb:1}}>
+                            THE AVAX APES ALPHA CHAT IS A TOKEN<span className="otherFont">-</span>GATED &nbsp;
+                            <Link href="https://discord.gg/YPuaQwwRmh" target="_blank" rel="_norefferer">DISCORD</Link>&nbsp;
+                            CHANNEL WHERE YOU CAN GET INFORMATION ON ALL THINGS AVALANCHE <span className="otherFont">
+                            (as well as other chains).</span>
+                        </Typography>
+                        <Typography>
+                            A PLACE WHERE YOU CAN RUB ELBOWS WITH AVALANCHE VETERANS WHO HAVE BEEN HERE SINCE THE
+                            BEGINNING<span className="otherFont">.</span> IF YOU ARE LOOKING FOR A PLACE WHERE YOU CAN
+                            PICK THE BRAINS OF PEOPLE WHO HAVE SEEN AND DONE IT ALL IN web<span className="otherFont">3,</span>&nbsp;
+                            THEN THE AVAX APES ALPHA CHAT IS WHERE YOU SHOULD BE<span className="otherFont">.</span>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2a-content"
+                        id="panel2a-header"
+                        sx={{backgroundColor: '#FFAD06'}}
+                    >
+                        <Typography>WHAT HAPPENED TO THE DEVS<span className="otherFont">?</span></Typography>
+                    </AccordionSummary>
+                    <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
+                        <Typography sx={{mb:1}}>
+                            AFTER THE ORIGINAL ROADMAP WAS DELIVERED<span className="otherFont">,</span> THE DEVS
+                            DEVELOPED A NASTY HABIT OF DISAPPEARING FOR MONTHS AT A TIME<span className="otherFont">.</span> &nbsp;
+                            THIS HAS CAUSED SOME TO CONSIDER THE AVAX APES A RUGGED PROJECT<span className="otherFont">,</span> &nbsp;
+                            BUT WE POLITELY DISAGREE<span className="otherFont">.</span>
+                        </Typography>
+                        <Typography sx={{mb:1}}>
+                            THE AVAX APES HAVE BEEN A COMMUNITY<span className="otherFont">-</span>RUN PROJECT SINCE
+                            NEARLY THE VERY BEGINNING<span className="otherFont">,</span> AND DESPITE THE ORIGINAL
+                            DEVS BEING AWOL THE APES HAVE REMAINED A STRONG PRESENCE WITHIN THE AVALANCHE ECOSYSTEM
+                            <span className="otherFont">.</span> A TRUE SOCIAL CLUB WHERE YOU CAN FIND A REPRESENTATIVE
+                            FROM NEARLY EVERY WELL<span className="otherFont">-</span>KNOWN PROJECT ON AVALANCHE<span className="otherFont">.</span>
+                        </Typography>
+                        <Typography>
+                            THE COMMUNITY HAS CONTROL OVER ALL SOCIALS AND THE NFT CONTRACT<span className="otherFont">,</span> BUT DOES NOT CONTROL THE
+                            LEGACY WEBSITE OR INTERNAL MARKETPLACE<span className="otherFont">.</span>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2a-content"
+                        id="panel2a-header"
+                        sx={{backgroundColor: '#FFAD06'}}
+                    >
+                        <Typography>WHY IS THE CONTRACT WEIRD<span className="otherFont">?</span></Typography>
+                    </AccordionSummary>
+                    <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
+                        <Typography sx={{mb:1}}>
+                            THERE IS NOTHING WRONG WITH THE CONTRACT PER SE<span className="otherFont">,</span> BUT
+                            THERE IS A SMALL QUIRK THAT PREVENTS APES FROM BEING TRADED ON
+                            MOST MARKETPLACES<span className="otherFont">.</span> THIS ISSUE HAS TO DO WITH THE WAY
+                            THE CONTRACT HANDLES APPROVALS<span className="otherFont">.</span>
+                        </Typography>
+                        <Typography sx={{mb:1}}>
+                            WHILE MOST NFTS UTILIZE <span className="otherFont">"setApprovalForAll"</span> TO
+                            HANDLE APPROVALS<span className="otherFont">,</span> &nbsp;
+                            THE AVAX APES CONTRACT SIMPLY USES <span className="otherFont">"approve".</span> THIS IS
+                            HARD<span className="otherFont">-</span>CODED INTO THE &nbsp;
+                            <span className="otherFont">"_beforeTokenTransfer"</span> FUNCTION OF THE CONTRACT
+                            <span className="otherFont">,</span> AND MEANS THAT MARKETPLACES
+                            MUST MAKE A SPECIAL ACCOMMODATION TO EXECUTE NON<span className="otherFont">-</span>CUSTODIAL AVAX APE TRANSACTIONS
+                            <span className="otherFont">.</span>
+                        </Typography>
+                        <Typography>
+                            AS OF RIGHT NOW THE ONLY MARKETPLACE TO MAKE THIS ACCOMMODATION IS&nbsp;
+                            <Link href="https://campfire.exchange/collections/0x6d5087b3082f73d42a32d85e38bc95dccede39bb" target="_blank" rel="_norefferer">
+                                CAMPFIRE</Link><span className="otherFont">.</span>
+                        </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel3a-content"
+                        id="panel3a-header"
+                        sx={{backgroundColor: '#FFAD06'}}
+                    >
+                        <Typography>WHY CAN<span className="otherFont">'</span>T I BUY ON JOEPEGS<span className="otherFont">?</span></Typography>
+                    </AccordionSummary>
+                    <AccordionDetails sx={{backgroundColor: '#FFAD06'}}>
+                        <Typography sx={{mb:1}}>
+                            SEE THE ABOVE SECTION ABOUT OUR CONTRACT<span className="otherFont">.</span>
+                        </Typography>
                     </AccordionDetails>
                 </Accordion>
             </Box>
