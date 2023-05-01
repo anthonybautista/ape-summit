@@ -10,6 +10,10 @@ body {
     max-height: 100px;
 }
 
+.errorText {
+    color: #F2B500;
+}
+
 .otherFont {
     font-family: "Marker Felt Wide";
     font-size: small;
